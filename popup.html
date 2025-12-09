@@ -1,0 +1,32 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tags-Songs Suggestor</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>📍 Tune-Tagger</h1>
+    <button id="refreshBtn" title="Refresh suggestions">⟳ Refresh</button>
+  </div>
+
+  <section>
+    <h2>Songs</h2>
+    <div id="songsList" class="list"></div>
+  </section>
+
+  <section>
+    <h2>Tags</h2>
+    <div id="tagsList" class="list"></div>
+  </section>
+
+  <footer>
+    <small>Powered by Spotify API</small>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

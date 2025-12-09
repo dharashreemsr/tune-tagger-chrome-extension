@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Tags-Songs-Suggester",
+  "version": "1.0",
+  "description": "Suggests tags and songs based on uploaded image.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://www.instagram.com/*",
+    "*://www.youtube.com/*",
+    "*://twitter.com/*",
+    "*://www.linkedin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.instagram.com/*",
+        "*://www.youtube.com/*",
+        "*://twitter.com/*",
+        "*://www.linkedin.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
